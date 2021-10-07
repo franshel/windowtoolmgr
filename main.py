@@ -10,7 +10,7 @@ from random import randint
 root = Tk()
 title = 'Window Manager Tool'
 root.title(title)
-root.geometry('512x512')
+root.geometry('512x810')
 
 
 def manager(instruction: str):
@@ -73,12 +73,32 @@ width = Label(frame_detail)
 isMinimized = Label(frame_detail)
 isMaximized = Label(frame_detail)
 
+centerxl = Label(frame_detail, text="centerx")
+centeryl = Label(frame_detail, text="centery")
+heightl = Label(frame_detail, text="height")
+widthl = Label(frame_detail, text="width")
+isMinimizedl = Label(frame_detail, text="isMinimized")
+isMaximizedl = Label(frame_detail, text="isMaximized")
+
+# labels to properties
+
 # packing or gridding
+centerxl.pack()
 centerx.pack()
+
+centeryl.pack()
 centery.pack()
+
+heightl.pack()
 height.pack()
+
+widthl.pack()
 width.pack()
+
+isMinimizedl.pack()
 isMinimized.pack()
+
+isMaximizedl.pack()
 isMaximized.pack()
 
 def update_props():
